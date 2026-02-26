@@ -1,0 +1,20 @@
+# TO COMPILE:
+
+rm -rf build
+cmake -B build -DLLAMA_METAL=ON -DCMAKE_BUILD_TYPE=Release
+cmake --build build -j $(sysctl -n hw.ncpu)
+
+# global alias in .zshrc :
+alias llama-server='/Users/jeffgreenberg/Production/llama.cpp/build/bin/llama-server'
+
+
+------
+Claude prompt to analyze server startup logging for different models:
+
+When the server starts it prints this logging. Could you take a look and outline important things I sould pay attention to. I'm particularly interested in the differences between models that I select. I'm trying to find out things that make one model perform more functionally (not only speed) for my prompts.
+
+[**** SERVER LOGGED OUTPUT GOES BELOW ****]
+
+✓ Server started (PID: 51686)
+To stop: python llama_server_launcher.py --stop
+...
