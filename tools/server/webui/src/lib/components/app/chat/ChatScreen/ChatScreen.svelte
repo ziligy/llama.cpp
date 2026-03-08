@@ -428,7 +428,7 @@
 	>
 		<div class="w-full max-w-[48rem] px-4">
 			<div class="mb-10 text-center" in:fade={{ duration: 300 }}>
-				<h1 class="mb-2 text-3xl font-semibold tracking-tight">llama.cpp</h1>
+				<h1 class="mb-2 text-3xl font-semibold tracking-tight">Eliza</h1>
 
 				<p class="text-lg text-muted-foreground">
 					{serverStore.props?.modalities?.audio

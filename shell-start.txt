@@ -7,6 +7,9 @@ cmake --build build -j $(sysctl -n hw.ncpu)
 # global alias in .zshrc :
 alias llama-server='/Users/jeffgreenberg/Production/llama.cpp/build/bin/llama-server'
 
+WebUI client Eliza (located in)
+~/Production/llama.cpp/tools/server/public
+
 
 ------
 Claude prompt to analyze server startup logging for different models:
